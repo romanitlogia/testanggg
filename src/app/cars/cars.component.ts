@@ -55,6 +55,7 @@ export class CarsComponent {
     car: new FormControl(''),
     name: new FormControl(''),
     phone: new FormControl(''),
+    comment: new FormControl(''),
   });
 
   ngOnInit() {

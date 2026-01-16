@@ -93,6 +93,7 @@
         <input type="text" placeholder="Автомобиль" required readonly id="car" formControlName="car" [class.error]="isError('car')"/>
         <input type="text" placeholder="Ваше имя" required id="name" formControlName="name" [class.error]="isError('name')"/>
         <input type="text" placeholder="Ваш телефон" required id="phone" minlength="10" formControlName="phone" [class.error]="isError('phone')"/>
+        <textarea placeholder="Комментарий" id="comment" formControlName="comment"></textarea>
         <button class="button" type="button" id="order-action" (click)="sendOrder()" [disabled]="!orderForm.valid">
           Забронировать
         </button>
